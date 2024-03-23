@@ -4,6 +4,8 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
+builder.Services.AddScoped<ISkillRepository, SkillRepository>();
+builder.Services.AddScoped<ISpellRepository, SpellRepository>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.ConfigureHttpJsonOptions(options =>
@@ -16,7 +18,7 @@ var app = builder.Build();
 
 IServiceCollection serviceCollection = builder.Services.AddDbContext<DataContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection"));builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
 };
 
 var sampleTodos = new Todo[] {

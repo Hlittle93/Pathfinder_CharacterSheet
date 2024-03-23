@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -7,20 +8,22 @@ namespace CharacterSheet.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CharactersController : ControllerBase
+    public class CharactersController : Controller
     {
         private readonly ICharacterRepository _characterRepository;
+        private readonly IMapper _mapper;
 
-        public CharactersController(ICharacterRepository characterRepository)
+        public CharactersController(ICharacterRepository characterRepository, IMapper mapper)
         {
             _characterRepository = characterRepository;
+            _mapper = mapper;
         }
 
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Character>))]
         public IActionResult GetCharacters()
         {
-            var characters = _characterRepository.GetCharacters();
+            var characters = _mapper.Map<List<CharacterDto>>(_characterRepository.GetCharacters());
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -36,7 +39,7 @@ namespace CharacterSheet.Controllers
             if (!_characterRepository.CharacterExists(charid))
                 return NotFound();
 
-            var character = _characterRepository.GetCharacter(charid);
+            var character = _mapper.Map<CharacterDto>(_characterRepository.GetCharacter(charid));
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

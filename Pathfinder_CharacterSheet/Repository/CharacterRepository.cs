@@ -1,12 +1,15 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
 public class CharacterRepository: ICharacterRepository
 {
     private readonly DataContext _context;
+    private readonly IMapper _mapper;
 
-    public CharacterRepository(DataContext context)
+    public CharacterRepository(DataContext context, IMapper mapper)
     {
         _context = context;
+        _mapper = mapper;
     }
 
     public bool CharacterExists(int charid)
@@ -22,11 +25,6 @@ public class CharacterRepository: ICharacterRepository
     public Character GetCharacter(string name)
     {
         return _context.Characters.Where(c =>c.Name == name).FirstOrDefault();
-    }
-
-    public ICollection<Character> GetCharacters()
-    {
-        throw new NotImplementedException();
     }
 
     public async Task<ICollection<Character>> GetCharactersAsync()
