@@ -9,26 +9,38 @@ namespace CharacterSheet.Controllers
     [ApiController]
     public class CharactersController : ControllerBase
     {
-        private static List<Character> characters = new List<Character>
+        private readonly ICharacterRepository _characterRepository;
+
+        public CharactersController(ICharacterRepository characterRepository)
         {
-            // new Character { Id = 1, Name = "Character 1", Race = "Human", Class = "Fighter" },
-            // new Character { Id = 2, Name = "Character 2", Race = "Elf", Class = "Wizard" }
-        };
+            _characterRepository = characterRepository;
+        }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Character>> GetCharacters()
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Character>))]
+        public IActionResult GetCharacters()
         {
+            var characters = _characterRepository.GetCharacters();
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             return Ok(characters);
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<Character> GetCharacter(int id)
+        [HttpGet("{charid}")]
+        [ProducesResponseType(200, Type = typeof(Character))]
+        [ProducesResponseType(400)]
+        public IActionResult GetCharacter(int charid)
         {
-            var character = characters.FirstOrDefault(c => c.Id == id);
-            if (character == null)
-            {
-                return NotFound(); 
-            }
+            if (!_characterRepository.CharacterExists(charid))
+                return NotFound();
+
+            var character = _characterRepository.GetCharacter(charid);
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             return Ok(character);
         }
 

@@ -4,6 +4,7 @@ public interface IGameItem
     string Description { get; set; }
     int Cost { get; set; }
     double Weight { get; set; }
+    //public ICollection<CharacterGameItem> CharacterGameItems { get; set; }
 
 }
 public class Potion : IGameItem
@@ -18,6 +19,7 @@ public class Potion : IGameItem
 
 public class Weapon : IGameItem
 {
+    int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public int Cost { get; set; }
