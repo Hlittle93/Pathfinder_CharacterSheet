@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj": {}
+    "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj": {
+    "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
+        "projectUniqueName": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
         "projectName": "Pathfinder_CharacterSheet",
-        "projectPath": "C:\\Users\\user\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\obj\\",
+        "projectPath": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
+        "packagesPath": "C:\\Users\\heath\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\heath\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -36,7 +36,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -50,7 +52,7 @@
             "Microsoft.DotNet.ILCompiler": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )",
+              "version": "[8.0.3, )",
               "autoReferenced": true
             },
             "Microsoft.EntityFrameworkCore": {
@@ -70,7 +72,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )",
+              "version": "[8.0.3, )",
               "autoReferenced": true
             },
             "Swashbuckle.AspNetCore": {
@@ -92,7 +94,7 @@
           "downloadDependencies": [
             {
               "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[8.0.2, 8.0.2]"
+              "version": "[8.0.3, 8.0.3]"
             }
           ],
           "frameworkReferences": {
@@ -103,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

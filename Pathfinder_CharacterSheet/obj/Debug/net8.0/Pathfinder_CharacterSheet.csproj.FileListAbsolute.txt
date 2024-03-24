@@ -1,0 +1,8 @@
+C:\Users\heath\OneDrive\Code You\Pathfinder_CharacterSheet\Pathfinder_CharacterSheet\obj\Debug\net8.0\Pathfinder_CharacterSheet.csproj.AssemblyReference.cache
+C:\Users\heath\OneDrive\Code You\Pathfinder_CharacterSheet\Pathfinder_CharacterSheet\obj\Debug\net8.0\Pathfinder_CharacterSheet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heath\OneDrive\Code You\Pathfinder_CharacterSheet\Pathfinder_CharacterSheet\obj\Debug\net8.0\Pathfinder_CharacterSheet.AssemblyInfoInputs.cache
+C:\Users\heath\OneDrive\Code You\Pathfinder_CharacterSheet\Pathfinder_CharacterSheet\obj\Debug\net8.0\Pathfinder_CharacterSheet.AssemblyInfo.cs
+C:\Users\heath\OneDrive\Code You\Pathfinder_CharacterSheet\Pathfinder_CharacterSheet\obj\Debug\net8.0\Pathfinder_CharacterSheet.csproj.CoreCompileInputs.cache
+C:\Users\heath\OneDrive\Code You\Pathfinder_CharacterSheet\Pathfinder_CharacterSheet\obj\Debug\net8.0\Pathfinder_CharacterSheet.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\heath\OneDrive\Code You\Pathfinder_CharacterSheet\Pathfinder_CharacterSheet\obj\Debug\net8.0\Pathfinder_CharacterSheet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\heath\OneDrive\Code You\Pathfinder_CharacterSheet\Pathfinder_CharacterSheet\obj\Debug\net8.0\Pathfinder_CharacterSheet.sourcelink.json

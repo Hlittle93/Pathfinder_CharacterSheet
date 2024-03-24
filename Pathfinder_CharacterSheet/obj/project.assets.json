@@ -402,7 +402,7 @@
           }
         }
       },
-      "Microsoft.DotNet.ILCompiler/8.0.2": {
+      "Microsoft.DotNet.ILCompiler/8.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.DotNet.ILCompiler.props": {}
@@ -846,7 +846,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.2": {
+      "Microsoft.NET.ILLink.Tasks/8.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -2281,10 +2281,10 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
-    "Microsoft.DotNet.ILCompiler/8.0.2": {
-      "sha512": "rGE3+673xn1iZJCoMIuUb9lhqje4DiCB+qTyPAJ97Bw15c4N69ZbMAO/GJyxchaoLJCHIPXP52hwxEzqrllwCg==",
+    "Microsoft.DotNet.ILCompiler/8.0.3": {
+      "sha512": "LGNORlVTRa2FDy3OcP3Xu1ZSJW4tz2ATO3WrHUwHg7kxbR9HChezgJ51CwZJQt8+Yp6acp32FDC/FTPdFDOumQ==",
       "type": "package",
-      "path": "microsoft.dotnet.ilcompiler/8.0.2",
+      "path": "microsoft.dotnet.ilcompiler/8.0.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2303,7 +2303,7 @@
         "build/NativeAOT.natvis",
         "build/WindowsAPIs.txt",
         "build/findvcvarsall.bat",
-        "microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512",
+        "microsoft.dotnet.ilcompiler.8.0.3.nupkg.sha512",
         "microsoft.dotnet.ilcompiler.nuspec",
         "runtime.json",
         "tools/netstandard/ILCompiler.Build.Tasks.deps.json",
@@ -3187,10 +3187,10 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.2": {
-      "sha512": "hKTrehpfVzOhAz0mreaTAZgbz0DrMEbWq4n3hAo8Ks6WdxdqQhNPvzOqn9VygKuWf1bmxPdraqzTaXriO/sn0A==",
+    "Microsoft.NET.ILLink.Tasks/8.0.3": {
+      "sha512": "0kwNg0LBIvVTx9A2mo9Mnw4wLGtaeQgjSz5P13bOOwdWPPLe9HzI+XTkwiMhS7iQCM6X4LAbFR76xScaMw0MrA==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.2",
+      "path": "microsoft.net.illink.tasks/8.0.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3204,7 +3204,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -4612,28 +4612,28 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 13.0.1",
-      "Microsoft.DotNet.ILCompiler >= 8.0.2",
+      "Microsoft.DotNet.ILCompiler >= 8.0.3",
       "Microsoft.EntityFrameworkCore >= 8.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.3",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.2",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.3",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\heath\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
+      "projectUniqueName": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
       "projectName": "Pathfinder_CharacterSheet",
-      "projectPath": "C:\\Users\\user\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\obj\\",
+      "projectPath": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
+      "packagesPath": "C:\\Users\\heath\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\heath\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4655,7 +4655,9 @@
         ]
       },
       "restoreAuditProperties": {
-        "enableAudit": "default"
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4669,7 +4671,7 @@
           "Microsoft.DotNet.ILCompiler": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.2, )",
+            "version": "[8.0.3, )",
             "autoReferenced": true
           },
           "Microsoft.EntityFrameworkCore": {
@@ -4689,7 +4691,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.2, )",
+            "version": "[8.0.3, )",
             "autoReferenced": true
           },
           "Swashbuckle.AspNetCore": {
@@ -4711,7 +4713,7 @@
         "downloadDependencies": [
           {
             "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-            "version": "[8.0.2, 8.0.2]"
+            "version": "[8.0.3, 8.0.3]"
           }
         ],
         "frameworkReferences": {
@@ -4722,7 +4724,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

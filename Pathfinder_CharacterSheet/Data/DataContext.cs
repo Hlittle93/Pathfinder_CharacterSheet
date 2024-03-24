@@ -11,7 +11,7 @@ public class DataContext : DbContext
     public DbSet<Character> Characters { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Spell> Spells { get; set; }
-    public DbSet<IGameItem> GameItems { get; set; }
+    public DbSet<IGameItem> IGameItems { get; set; }
     public DbSet<Skill> Skills { get; set; }
     public DbSet<CharacterSpell> CharacterSpells { get; set; }
     public DbSet<CharacterGameItem> CharacterIGameItems { get; set; }

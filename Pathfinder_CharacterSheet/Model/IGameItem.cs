@@ -1,14 +1,16 @@
 public interface IGameItem
 {
-    string Name { get; set; }
-    string Description { get; set; }
-    int Cost { get; set; }
-    double Weight { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public int Cost { get; set; }
+    public double Weight { get; set; }
     //public ICollection<CharacterGameItem> CharacterGameItems { get; set; }
 
 }
 public class Potion : IGameItem
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public int Cost { get; set; }
@@ -19,7 +21,7 @@ public class Potion : IGameItem
 
 public class Weapon : IGameItem
 {
-    int Id { get; set; }
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public int Cost { get; set; }
@@ -28,20 +30,22 @@ public class Weapon : IGameItem
     
 }
 
-public interface Armor: IGameItem
+public class Armor : IGameItem
 {
-    string Name { get; set; }
-    string Description { get; set; }
-    int Cost { get; set; }
-    double Weight { get; set; }
-    int ArmorBonus { get; set; }   
-    int MaxDex { get; set; }
-    int ArmorCheckPenality { get; set; }
-    double ArcaneSpellFail { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public int Cost { get; set; }
+    public double Weight { get; set; }
+    public int ArmorBonus { get; set; }   
+    public int MaxDex { get; set; }
+    public int ArmorCheckPenality { get; set; }
+    public double ArcaneSpellFail { get; set; }
 
 }
 public class Wand : IGameItem
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public int Cost { get; set; }
@@ -51,6 +55,7 @@ public class Wand : IGameItem
 }
 public class Ring : IGameItem
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public int Cost { get; set; }
@@ -60,6 +65,7 @@ public class Ring : IGameItem
 }
 public class Staff : IGameItem
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public int Cost { get; set; }
@@ -71,6 +77,7 @@ public class Staff : IGameItem
 
 public class Scroll : IGameItem
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public int Cost { get; set; }
@@ -80,6 +87,7 @@ public class Scroll : IGameItem
 }
 public class Poison : IGameItem
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public int Cost { get; set; }

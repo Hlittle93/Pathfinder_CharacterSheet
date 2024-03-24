@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\controllers\\characterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\controllers\\characterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\dto\\igameitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\dto\\igameitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\model\\igameitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\model\\igameitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\controllers\\igameitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\controllers\\igameitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CharactersController.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\CharactersController.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Controllers\\CharactersController.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\CharactersController.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Controllers\\CharactersController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T04:24:00.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T03:52:08.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T03:23:36.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T03:20:47.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IGameItem.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Model\\IGameItem.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Model\\IGameItem.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Model\\IGameItem.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Model\\IGameItem.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAqwDgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T02:59:25.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGameItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Dto\\IGameItemDto.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Dto\\IGameItemDto.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Dto\\IGameItemDto.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Dto\\IGameItemDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T02:59:21.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IGameItemController.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\IGameItemController.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Controllers\\IGameItemController.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\IGameItemController.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Controllers\\IGameItemController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T02:54:25.445Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
