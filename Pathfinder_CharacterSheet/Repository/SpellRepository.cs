@@ -11,6 +11,13 @@ public class SpellRepository : ISpellRepository
         _context = context;
         _mapper = mapper;
     }
+
+    public bool CreateSpell(Spell spell)
+    {
+        _context.Add(spell);
+        return Save();
+    }
+
     public Spell GetSpell(int spellId)
     {
         return _context.Spells.Where(e => e.Id == spellId).FirstOrDefault();
@@ -21,9 +28,20 @@ public class SpellRepository : ISpellRepository
         return (Spell)_context.Characters.Where(o => o.Id == characterId).Select(s => s.CharacterSpells).FirstOrDefault();
     }
 
+    public ICollection<Spell> GetSpells()
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<ICollection<Spell>> GetSpellsAsync()
     {
         return await _context.Spells.OrderBy(s => s.Id).ToListAsync();
+    }
+
+    public bool Save()
+    {
+        var saved = _context.SaveChanges();
+        return saved > 0 ? true : false;
     }
 
     public bool SpellExists(int spellId)

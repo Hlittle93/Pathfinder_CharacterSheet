@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Pathfinder_CharacterSheet.Dto;
 using Pathfinder_CharacterSheet.Interfaces;
 
 
@@ -16,6 +18,12 @@ namespace Pathfinder_CharacterSheet.Repository
         {
             _context = context;
             _mapper = mapper;
+        }
+
+        public bool CreateUser(User user)
+        {
+            _context.Add(user);
+            return Save();
         }
 
         public ICollection<User> GetCharactersOfAUser(int charid)
@@ -38,10 +46,17 @@ namespace Pathfinder_CharacterSheet.Repository
             throw new NotImplementedException();
         }
 
+        public bool Save()
+        {
+            var saved = _context.SaveChanges();
+            return saved > 0 ? true : false;
+        }
+
         public bool UserExists(int userid)
         {
             return _context.Users.Any(u => u.Id == userid);
         }
+
 
     }
 }

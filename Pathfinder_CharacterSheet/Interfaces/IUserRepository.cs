@@ -6,5 +6,7 @@
         User GetUser(int userid);
         ICollection<User> GetCharactersOfAUser(int charid);
         public bool UserExists (int userid);
+        bool CreateUser (User user);
+        bool Save();
     }
 }

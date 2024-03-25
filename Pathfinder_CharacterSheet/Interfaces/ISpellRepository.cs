@@ -7,4 +7,6 @@ public interface ISpellRepository
     Spell GetSpellByCharacter(int characterId);
 
     bool SpellExists(int spellId);
+    bool CreateSpell(Spell spell);
+    bool Save();
 }

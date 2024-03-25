@@ -5,4 +5,6 @@ public interface ISkillRepository
 
     Skill GetSkill(string name);
     bool SkillExists(int skillid);
+    bool CreateSkill(Skill skill);
+    bool Save();
 }

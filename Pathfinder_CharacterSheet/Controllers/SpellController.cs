@@ -57,4 +57,36 @@ public class SpellController : Controller
 
         return Ok(spell);
     }
+
+    [HttpPost]
+    [ProducesResponseType(204)]
+    [ProducesResponseType(400)]
+    public IActionResult CreateSpell([FromBody] SpellDto spellCreate)
+    {
+        if (spellCreate == null)
+            return BadRequest(ModelState);
+
+        var spell = _spellRepository.GetSpells()
+            .Where(s => s.Name.Trim().ToUpper() == spellCreate.Name.TrimEnd().ToUpper())
+            .FirstOrDefault();
+
+        if (spell != null)
+        {
+            ModelState.AddModelError("", "Spell already exists");
+            return StatusCode(422, ModelState);
+        }
+
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var spellMap = _mapper.Map<Spell>(spellCreate);
+
+        if (!_spellRepository.CreateSpell(spellMap))
+        {
+            ModelState.AddModelError("", "Something went wrong while saving");
+            return StatusCode(500, ModelState);
+        }
+
+        return Ok("Successfully Created");
+    }
 }

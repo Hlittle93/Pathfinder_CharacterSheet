@@ -1,47 +1,42 @@
 using Microsoft.EntityFrameworkCore;
+using Pathfinder_CharacterSheet.Interfaces;
+using Pathfinder_CharacterSheet.Repository;
 using System.Text.Json.Serialization;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
-builder.Services.AddScoped<ISkillRepository, SkillRepository>();
-builder.Services.AddScoped<ISpellRepository, SpellRepository>();
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-builder.Services.ConfigureHttpJsonOptions(options =>
+internal class Program
 {
-    options.SerializerOptions.TypeInfoResolverChain.Insert(0, AppJsonSerializerContext.Default);
-});
+    private static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
+        builder.Services.AddControllers();
+        builder.Services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+        builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
+        builder.Services.AddScoped<ISkillRepository, SkillRepository>();
+        builder.Services.AddScoped<ISpellRepository, SpellRepository>();
+        builder.Services.AddScoped<IIGameItemRepository, IGameItemRepository>();
+        builder.Services.AddScoped<IUserRepository, UserRepository>();
+        builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen(c =>
+        {
+            c.SwaggerDoc("v1",
+                new() { Title= "Pathfinder Character Sheet", Version= "v1" });
+        });
 
 
-IServiceCollection serviceCollection = builder.Services.AddDbContext<DataContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection"));builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
-};
+        var app = builder.Build();
 
-var sampleTodos = new Todo[] {
-    new(1, "Walk the dog"),
-    new(2, "Do the dishes", DateOnly.FromDateTime(DateTime.Now)),
-    new(3, "Do the laundry", DateOnly.FromDateTime(DateTime.Now.AddDays(1))),
-    new(4, "Clean the bathroom"),
-    new(5, "Clean the car", DateOnly.FromDateTime(DateTime.Now.AddDays(2)))
-};
+        app.UseSwagger();
+        app.UseSwaggerUI(c => c.SwaggerEndpoint(
+                "/swagger/v1/swagger.json",
+                "v1"
+                ));
 
-var todosApi = app.MapGroup("/todos");
-todosApi.MapGet("/", () => sampleTodos);
-todosApi.MapGet("/{id}", (int id) =>
-    sampleTodos.FirstOrDefault(a => a.Id == id) is { } todo
-        ? Results.Ok(todo)
-        : Results.NotFound());
-
-app.Run();
-
-public record Todo(int Id, string? Title, DateOnly? DueBy = null, bool IsComplete = false);
-
-[JsonSerializable(typeof(Todo[]))]
-internal partial class AppJsonSerializerContext : JsonSerializerContext
-{
-
+        builder.Services.AddDbContext<DataContext>(options =>
+        {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection"));
+        });
+    }
 }
