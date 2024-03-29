@@ -12,23 +12,35 @@ namespace Pathfinder_CharacterSheet.Controllers
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IUserRepository userRepository, IMapper mapper)
+        public UserController(IUserRepository userRepository, IMapper mapper, ILogger<UserController> logger)
         {
             _userRepository = userRepository;
             _mapper = mapper;
+            _logger = logger;
         }
 
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<User>))]
         public IActionResult GetUsers()
         {
-            var users = _mapper.Map<List<UserDto>>(_userRepository.GetUsers());
+            try
+            {
+                _logger.LogInformation("Getting users");
+                var users = _mapper.Map<List<UserDto>>(_userRepository.GetUsers());
 
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                if (!ModelState.IsValid)
+                    _logger.LogWarning("Invalid model state");
 
-            return Ok(users);
+                _logger.LogInformation("Returning spells");
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while getting users");
+                throw; 
+            }
         }
 
         [HttpGet("{userid}")]

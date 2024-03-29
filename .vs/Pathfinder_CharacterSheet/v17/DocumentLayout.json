@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\data\\externalcvsparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\data\\externalcvsparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\data\\modelmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\data\\modelmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\interfaces\\ibaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\interfaces\\ibaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\pathfinder_charactersheet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\pathfinder_charactersheet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\pathfinder_charactersheet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\pathfinder_charactersheet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\interfaces\\ispellrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\interfaces\\ispellrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\controllers\\characterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\controllers\\characterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\model\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\model\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\dto\\spelldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\dto\\spelldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\controllers\\spellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\controllers\\spellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\pathfinder_charactersheet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\pathfinder_charactersheet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|c:\\users\\heath\\onedrive\\code you\\pathfinder_charactersheet\\pathfinder_charactersheet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{287CC692-1ED4-4D39-BD1D-72059138494D}|Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj|solutionrelative:pathfinder_charactersheet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,107 +58,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBaseItem.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Interfaces\\IBaseItem.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Interfaces\\IBaseItem.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Interfaces\\IBaseItem.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Interfaces\\IBaseItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T09:51:53.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelMapping.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Data\\ModelMapping.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Data\\ModelMapping.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Data\\ModelMapping.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Data\\ModelMapping.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T09:12:31.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Data\\DbInitializer.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowBEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T09:10:59.813Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Pathfinder_CharacterSheet.http",
-              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.http",
-              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.http",
-              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.http",
-              "RelativeToolTip": "Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-03-29T02:25:00.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pathfinder_CharacterSheet",
-              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
-              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
-              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
-              "RelativeToolTip": "Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-29T02:21:02.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SpellController.cs",
-              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\SpellController.cs",
-              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Controllers\\SpellController.cs",
-              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\SpellController.cs",
-              "RelativeToolTip": "Pathfinder_CharacterSheet\\Controllers\\SpellController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAABOAAAA",
+              "Title": "ExternalCVSParser.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Data\\ExternalCVSParser.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Data\\ExternalCVSParser.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Data\\ExternalCVSParser.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Data\\ExternalCVSParser.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwFcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T03:57:23.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SpellDto.cs",
-              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Dto\\SpellDto.cs",
-              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Dto\\SpellDto.cs",
-              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Dto\\SpellDto.cs",
-              "RelativeToolTip": "Pathfinder_CharacterSheet\\Dto\\SpellDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T03:56:56.882Z",
+              "WhenOpened": "2024-03-29T09:04:41.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Spell.cs",
-              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Model\\Spell.cs",
-              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Model\\Spell.cs",
-              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Model\\Spell.cs",
-              "RelativeToolTip": "Pathfinder_CharacterSheet\\Model\\Spell.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T03:56:05.154Z",
-              "EditorCaption": ""
+              "Title": "Pathfinder_CharacterSheet.csproj",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-29T08:53:31.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ISpellRepository.cs",
-              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Interfaces\\ISpellRepository.cs",
-              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Interfaces\\ISpellRepository.cs",
-              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Interfaces\\ISpellRepository.cs",
-              "RelativeToolTip": "Pathfinder_CharacterSheet\\Interfaces\\ISpellRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T03:55:51.194Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "Pathfinder_CharacterSheet.http",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.http",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.http",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.http",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-03-29T08:34:18.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Program.cs",
-              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Program.cs",
-              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Program.cs",
-              "RelativeToolTip": "Pathfinder_CharacterSheet\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwCUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T03:48:38.564Z",
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-29T08:28:11.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\appsettings.json",
               "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\appsettings.json",
               "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\appsettings.json",
               "RelativeToolTip": "Pathfinder_CharacterSheet\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-28T03:47:10.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T08:28:04.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Program.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Program.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Program.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T08:26:54.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CharactersController.cs",
+              "DocumentMoniker": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\CharactersController.cs",
+              "RelativeDocumentMoniker": "Pathfinder_CharacterSheet\\Controllers\\CharactersController.cs",
+              "ToolTip": "C:\\Users\\heath\\OneDrive\\Code You\\Pathfinder_CharacterSheet\\Pathfinder_CharacterSheet\\Controllers\\CharactersController.cs",
+              "RelativeToolTip": "Pathfinder_CharacterSheet\\Controllers\\CharactersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T08:22:24.052Z"
             }
           ]
         }

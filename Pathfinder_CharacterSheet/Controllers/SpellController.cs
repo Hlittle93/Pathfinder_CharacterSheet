@@ -7,23 +7,35 @@ public class SpellController : Controller
 {
     private readonly ISpellRepository _spellRepository;
     private readonly IMapper _mapper;
+    private readonly ILogger<SpellController> _logger;
 
-    public SpellController(ISpellRepository spellRepository, IMapper mapper)
+    public SpellController(ISpellRepository spellRepository, IMapper mapper, ILogger<SpellController> logger)
     {
         _spellRepository = spellRepository;
         _mapper = mapper;
+        _logger = logger;
     }
 
     [HttpGet]
     [ProducesResponseType(200, Type = typeof(IEnumerable<Spell>))]
     public IActionResult GetSpells()
     {
-        var spells = _mapper.Map<List<SpellDto>>(_spellRepository.GetSpells());
+        try
+        {
+            _logger.LogInformation("Getting spells");
+            var spells = _mapper.Map<List<SpellDto>>(_spellRepository.GetSpells());
 
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                _logger.LogWarning("Invalid model state");
 
-        return Ok(spells);
+            _logger.LogInformation("Returning spells");
+            return Ok(spells);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while getting spells");
+            throw;
+        }
     }
     [HttpGet("{spellid}")]
     [ProducesResponseType(200, Type = typeof(Spell))]

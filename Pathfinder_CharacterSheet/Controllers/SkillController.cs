@@ -8,23 +8,35 @@ public class SkillController : Controller
 {
     private readonly ISkillRepository _skillRepository;
     private readonly IMapper _mapper;
+    private readonly ILogger<SkillController> _logger;
 
-    public SkillController(ISkillRepository skillRepository, IMapper mapper)
+    public SkillController(ISkillRepository skillRepository, IMapper mapper, ILogger<SkillController> logger)
     {
         _skillRepository = skillRepository;
         _mapper = mapper;
+        _logger = logger;
     }
 
     [HttpGet]
     [ProducesResponseType(200, Type = typeof(IEnumerable<Skill>))]
     public IActionResult GetSkills()
     {
-        var skills = _mapper.Map<List<SkillDto>>(_skillRepository.GetSkills());
+        try
+        {
+            _logger.LogInformation("Getting skills");
+            var skills = _mapper.Map<List<SkillDto>>(_skillRepository.GetSkills());
 
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                _logger.LogWarning("Invalid model state");
 
-        return Ok(skills);
+            _logger.LogInformation("Returning skills");
+            return Ok(skills);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while getting skills");
+            throw; 
+        }
     }
     [HttpGet("{skillid}")]
     [ProducesResponseType(200, Type = typeof(Skill))]

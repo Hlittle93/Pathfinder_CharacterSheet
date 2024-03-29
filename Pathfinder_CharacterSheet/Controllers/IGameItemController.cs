@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using CharacterSheet.Controllers;
+using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc;
 using Pathfinder_CharacterSheet.Dto;
 using Pathfinder_CharacterSheet.Repository;
@@ -11,11 +13,13 @@ namespace Pathfinder_CharacterSheet.Controllers
     {
         private readonly IIGameItemRepository _igameitemRepository;
         private readonly IMapper _mapper;
+        private readonly ILogger<IGameItemController> _logger;
 
-        public IGameItemController(IIGameItemRepository igameitemRepository, IMapper mapper)
+        public IGameItemController(IIGameItemRepository igameitemRepository, IMapper mapper, ILogger<IGameItemController> logger)
         {
             _igameitemRepository = igameitemRepository;
             _mapper = mapper;
+            _logger = logger;
         }
 
 
@@ -23,12 +27,23 @@ namespace Pathfinder_CharacterSheet.Controllers
         [ProducesResponseType(200, Type = typeof(IEnumerable<IGameItem>))]
         public IActionResult GetGameItems()
         {
-            var gameitems = _mapper.Map<List<GameItemDto>>(_igameitemRepository.GetGameItem());
+            try
+            {
+                _logger.LogInformation("Getting GameItems");
+                var gameitems = _mapper.Map<List<GameItemDto>>(_igameitemRepository.GetGameItem());
 
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                if (!ModelState.IsValid)
+                    _logger.LogWarning("Invalid model state");
 
-            return Ok(gameitems);
+                _logger.LogInformation("Returning game items");
+                return Ok(gameitems);
+            }
+
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while getting game items.");
+                throw; 
+            }
         }
 
         [HttpGet("{gameitemid}")]
@@ -47,7 +62,7 @@ namespace Pathfinder_CharacterSheet.Controllers
             return Ok(gameitems);
         }
 
-        [HttpGet("{gameitemid}/charcater")]
+        [HttpGet("{gameitemid}/character")]
         [ProducesResponseType(200, Type = typeof(IGameItem))]
         [ProducesResponseType(400)]
 

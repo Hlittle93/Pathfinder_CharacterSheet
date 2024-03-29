@@ -1,11 +1,13 @@
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Pathfinder_CharacterSheet.Interfaces;
 using Pathfinder_CharacterSheet.Repository;
 using System.Text.Json.Serialization;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    private static async Task Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
@@ -32,12 +34,23 @@ internal class Program
 
         var app = builder.Build();
 
+        void ConfigureServices(IServiceCollection services)
+        {
+            services.AddLogging(logging =>
+            {
+                logging.ClearProviders(); 
+                logging.AddFile("Logs/myapp-{Date}.txt"); 
+            });
+
+        }
+
         app.UseSwagger();
         app.UseSwaggerUI(c => c.SwaggerEndpoint(
                 "/swagger/v1/swagger.json",
                 "v1"
                 ));
 
-        app.Run();
+        await app.RunAsync();
     }
 }
+

@@ -1,5 +1,6 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Pathfinder_CharacterSheet.Dto;
 using System;
 using System.Collections.Generic;
@@ -14,27 +15,39 @@ namespace CharacterSheet.Controllers
         private readonly ICharacterRepository _characterRepository;
         private readonly ISkillRepository _skillRepository;
         private readonly IMapper _mapper;
+        private readonly ILogger<CharactersController> _logger;
 
         public CharactersController(ICharacterRepository characterRepository, 
             ISkillRepository skillRepository,
-
-            IMapper mapper)
+            IMapper mapper,
+            ILogger<CharactersController> logger)
         {
             _characterRepository = characterRepository;
             _skillRepository = skillRepository;
             _mapper = mapper;
+            _logger = logger;
         }
 
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Character>))]
         public IActionResult GetCharacters()
         {
-            var characters = _mapper.Map<List<CharacterDto>>(_characterRepository.GetCharacters());
+            try
+            {
+                _logger.LogInformation("Getting characters");
+                var characters = _mapper.Map<List<CharacterDto>>(_characterRepository.GetCharacters());
 
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                _logger.LogWarning("Invalid model state");
 
-            return Ok(characters);
+                _logger.LogInformation("Returning characters");
+                return Ok(characters);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while getting characters");
+                throw; 
+            }
         }
 
         [HttpGet("{charid}")]

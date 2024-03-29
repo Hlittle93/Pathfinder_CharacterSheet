@@ -69,11 +69,19 @@
               "target": "Package",
               "version": "[8.0.3, )"
             },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.3, )",
               "autoReferenced": true
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[2.0.0-dev-00024, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

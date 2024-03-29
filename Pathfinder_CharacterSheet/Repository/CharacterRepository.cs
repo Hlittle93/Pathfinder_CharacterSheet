@@ -85,12 +85,8 @@ public class CharacterRepository: ICharacterRepository
 
     public bool UpdateCharacter(int skillid, int spellid, int gameitemid, Character character)
     {
-        throw new NotImplementedException();
-    }
-
-    public bool UpdateCharcter(int skillid, int spellid, int gameitemid, Character character)
-    {
         _context.Update(character);
         return Save();
     }
+
 }

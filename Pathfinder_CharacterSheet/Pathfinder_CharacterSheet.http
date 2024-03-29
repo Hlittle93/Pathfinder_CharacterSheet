@@ -1,9 +1,9 @@
 Pathfinder_CharacterSheet_HostAddress = http://localhost:5020
 
 ### GET Todos List
-GET {{Pathfinder_CharacterSheet_HostAddress}}/todos
+GET {{Pathfinder_CharacterSheet_HostAddress}}/Characters
 Accept: application/json
 
 ### GET Todo by ID
-GET {{Pathfinder_CharacterSheet_HostAddress}}/todos/1
+GET {{Pathfinder_CharacterSheet_HostAddress}}/IGameItems
 Accept: application/json
