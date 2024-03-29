@@ -1,8 +1,5 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -88,5 +85,59 @@ public class SpellController : Controller
         }
 
         return Ok("Successfully Created");
+    }
+
+    [HttpPut("{spellId}")]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(204)]
+    [ProducesResponseType(404)]
+    public IActionResult UpdateSpell(int spellId, [FromBody] SpellDto updatedSpell)
+    {
+        if (updatedSpell == null)
+            return BadRequest(ModelState);
+
+        if (spellId != updatedSpell.Id)
+            return BadRequest(ModelState);
+
+        if (!_spellRepository.SpellExists(spellId))
+            return NotFound();
+
+        if (!ModelState.IsValid)
+            return BadRequest();
+
+        var spellMap = _mapper.Map<Spell>(updatedSpell);
+
+        if (!_spellRepository.UpdateSpell(spellMap))
+        {
+            ModelState.AddModelError("", "Something went wrong updating spell.");
+            return StatusCode(500, ModelState);
+        }
+
+        return NoContent();
+    }
+
+    [HttpDelete("{spellId}")]
+    [ProducesResponseType(200)]
+    [ProducesResponseType(204)]
+    [ProducesResponseType(404)]
+
+    public IActionResult DeleteSpell(int spellId)
+    {
+        if (!_spellRepository.SpellExists(spellId))
+        {
+            return NotFound();
+        }
+
+        var spellToDelete = _spellRepository.GetSpell(spellId);
+
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        if (!_spellRepository.DeleteSpell(spellToDelete))
+        {
+            ModelState.AddModelError("", "Something went wrong deleting spell.");
+        }
+
+        return NoContent();
     }
 }

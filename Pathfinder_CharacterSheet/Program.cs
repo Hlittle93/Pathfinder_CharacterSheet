@@ -22,9 +22,13 @@ internal class Program
         builder.Services.AddSwaggerGen(c =>
         {
             c.SwaggerDoc("v1",
-                new() { Title= "Pathfinder Character Sheet", Version= "v1" });
+                new() { Title = "Pathfinder Character Sheet", Version = "v1" });
         });
 
+        builder.Services.AddDbContext<DataContext>(options =>
+        {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+        });
 
         var app = builder.Build();
 
@@ -34,9 +38,6 @@ internal class Program
                 "v1"
                 ));
 
-        builder.Services.AddDbContext<DataContext>(options =>
-        {
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection"));
-        });
+        app.Run();
     }
 }

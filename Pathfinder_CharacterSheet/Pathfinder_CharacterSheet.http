@@ -1,12 +1,9 @@
-@Pathfinder_CharacterSheet_HostAddress = http://localhost:5020puc
+Pathfinder_CharacterSheet_HostAddress = http://localhost:5020
 
-GET {{Pathfinder_CharacterSheet_HostAddress}}/todos/
+### GET Todos List
+GET {{Pathfinder_CharacterSheet_HostAddress}}/todos
 Accept: application/json
 
-###
-
+### GET Todo by ID
 GET {{Pathfinder_CharacterSheet_HostAddress}}/todos/1
 Accept: application/json
-
-###
-wefwe

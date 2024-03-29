@@ -8,5 +8,7 @@ public interface ISpellRepository
 
     bool SpellExists(int spellId);
     bool CreateSpell(Spell spell);
+    bool UpdateSpell(Spell spell);
+    bool DeleteSpell(Spell spell);
     bool Save();
 }

@@ -26,6 +26,12 @@ namespace Pathfinder_CharacterSheet.Repository
             return Save();
         }
 
+        public bool DeleteUser(User user)
+        {
+           _context.Remove(user);
+            return Save();
+        }
+
         public ICollection<User> GetCharactersOfAUser(int charid)
         {
             return _context.Users.Where(u => u.Characters.Any(c => c.Id == charid)).ToList();
@@ -50,6 +56,12 @@ namespace Pathfinder_CharacterSheet.Repository
         {
             var saved = _context.SaveChanges();
             return saved > 0 ? true : false;
+        }
+
+        public bool UpdateUser(User user)
+        {
+            _context.Update(user);
+            return Save();
         }
 
         public bool UserExists(int userid)

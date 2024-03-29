@@ -15,6 +15,12 @@ public class SkillRepository : ISkillRepository
         return Save();
     }
 
+    public bool DeleteSkill(Skill skill)
+    {
+        _context.Remove(skill);
+        return Save();
+    }
+
     public Skill GetSkill(int id)
     {
         return _context.Skills.Where(e => e.Id == id).FirstOrDefault();
@@ -49,5 +55,11 @@ public class SkillRepository : ISkillRepository
     public bool SkillExists(int skillid)
     {
         return _context.Skills.Any(s => s.Id == skillid);
+    }
+
+    public bool UpdateSpell(Skill skill)
+    {
+        _context.Update(skill);
+        return Save();
     }
 }

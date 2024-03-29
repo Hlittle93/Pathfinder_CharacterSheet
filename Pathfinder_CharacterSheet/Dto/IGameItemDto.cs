@@ -1,8 +1,7 @@
 ﻿namespace Pathfinder_CharacterSheet.Dto
 {
-    public class IGameItemDto
-    {
-        public interface IGameItem
+
+        public class GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -11,7 +10,7 @@
             public double Weight { get; set; }
 
         }
-        public class Potion : IGameItem
+        public class PotionDto : GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -22,7 +21,7 @@
 
         }
 
-        public class Weapon : IGameItem
+        public class WeaponDto : GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -33,7 +32,7 @@
 
         }
 
-        public class Armor : IGameItem
+        public class ArmorDto : GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -46,7 +45,7 @@
             public double ArcaneSpellFail { get; set; }
 
         }
-        public class Wand : IGameItem
+        public class WandDto : GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -56,7 +55,7 @@
             public string Spell { get; set; }
             public int Charges { get; set; }
         }
-        public class Ring : IGameItem
+        public class RingDto : GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -66,7 +65,7 @@
             public string Effect { get; set; }
             public string Material { get; set; }
         }
-        public class Staff : IGameItem
+        public class StaffDto : GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -78,7 +77,7 @@
             public int Length { get; set; }
         }
 
-        public class Scroll : IGameItem
+        public class ScrollDto : GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -88,7 +87,7 @@
             public string Spell { get; set; }
             public int ScrollLevel { get; set; }
         }
-        public class Poison : IGameItem
+        public class PoisonDto : GameItemDto
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -100,4 +99,4 @@
         }
 
     }
-}
+

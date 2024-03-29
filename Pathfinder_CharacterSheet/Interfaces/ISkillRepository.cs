@@ -6,5 +6,7 @@ public interface ISkillRepository
     Skill GetSkill(string name);
     bool SkillExists(int skillid);
     bool CreateSkill(Skill skill);
+    bool UpdateSpell(Skill skill);
+    bool DeleteSkill(Skill skill);
     bool Save();
 }

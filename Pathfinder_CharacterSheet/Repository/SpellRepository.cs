@@ -18,6 +18,12 @@ public class SpellRepository : ISpellRepository
         return Save();
     }
 
+    public bool DeleteSpell(Spell spell)
+    {
+        _context.Remove(spell);
+        return Save();
+    }
+
     public Spell GetSpell(int spellId)
     {
         return _context.Spells.Where(e => e.Id == spellId).FirstOrDefault();
@@ -47,5 +53,11 @@ public class SpellRepository : ISpellRepository
     public bool SpellExists(int spellId)
     {
         return _context.Spells.Any(spell => spell.Id == spellId);
+    }
+
+    public bool UpdateSpell(Spell spell)
+    {
+        _context.Update(spell);
+        return Save();
     }
 }

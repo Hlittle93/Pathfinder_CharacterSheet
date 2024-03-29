@@ -51,6 +51,12 @@ public class CharacterRepository: ICharacterRepository
         return Save();
     }
 
+    public bool DeleteCharacter(Character character)
+    {
+        _context.Remove(character);
+        return Save();
+    }
+
     public Character GetCharacter(int charid)
     {
         return _context.Characters.Where(c => c.Id == charid).FirstOrDefault();
@@ -75,5 +81,16 @@ public class CharacterRepository: ICharacterRepository
     {
         var saved = _context.SaveChanges();
         return saved > 0 ? true : false;
+    }
+
+    public bool UpdateCharacter(int skillid, int spellid, int gameitemid, Character character)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool UpdateCharcter(int skillid, int spellid, int gameitemid, Character character)
+    {
+        _context.Update(character);
+        return Save();
     }
 }

@@ -7,6 +7,8 @@
         ICollection<User> GetCharactersOfAUser(int charid);
         public bool UserExists (int userid);
         bool CreateUser (User user);
+        bool UpdateUser(User user);
+        bool DeleteUser(User user);
         bool Save();
     }
 }

@@ -73,4 +73,60 @@ public class SkillController : Controller
 
         return Ok("Successfully Created");
     }
+
+    [HttpPut("{skillId}")]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(204)]
+    [ProducesResponseType(404)]
+    public IActionResult UpdateSkill(int skillId, [FromBody] SkillDto updatedSkill)
+    {
+        if(updatedSkill == null)
+            return BadRequest(ModelState);
+
+        if(skillId != updatedSkill.Id)
+            return BadRequest(ModelState);
+
+        if (!_skillRepository.SkillExists(skillId))
+            return NotFound();
+
+        if(!ModelState.IsValid)
+            return BadRequest();
+
+        var skillMap = _mapper.Map<Skill>(updatedSkill);
+
+        if (!_skillRepository.UpdateSpell(skillMap))
+        {
+            ModelState.AddModelError("", "Something went wrong updating skill.");
+            return StatusCode(500, ModelState);
+        }
+
+        return NoContent();
+    }
+
+    [HttpDelete("{skillId}")]
+    [ProducesResponseType(200)]
+    [ProducesResponseType(204)]
+    [ProducesResponseType(404)]
+
+    public IActionResult DeleteSkill(int skillId)
+    {
+        if (!_skillRepository.SkillExists(skillId))
+        {
+            return NotFound();
+        }
+
+        var skillToDelete = _skillRepository.GetSkill(skillId);
+        
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        if (!_skillRepository.DeleteSkill(skillToDelete))
+        {
+            ModelState.AddModelError("", "Something went wrong deleting skill.");
+        }
+
+        return NoContent();
+    }
+
+
 }

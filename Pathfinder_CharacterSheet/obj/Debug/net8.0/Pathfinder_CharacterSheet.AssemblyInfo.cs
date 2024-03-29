@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pathfinder_CharacterSheet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+644f2c8c3176dd10bc81a048358462f13b86a997")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+671a36105e45c4a5dd9fbad1b3e3e2d0a3e25ed3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pathfinder_CharacterSheet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pathfinder_CharacterSheet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

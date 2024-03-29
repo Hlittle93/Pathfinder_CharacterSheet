@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Pathfinder_CharacterSheet.Dto;
+using Pathfinder_CharacterSheet.Repository;
 
 namespace Pathfinder_CharacterSheet.Controllers
 {
@@ -22,7 +23,7 @@ namespace Pathfinder_CharacterSheet.Controllers
         [ProducesResponseType(200, Type = typeof(IEnumerable<IGameItem>))]
         public IActionResult GetGameItems()
         {
-            var gameitems = _mapper.Map<List<IGameItemDto>>(_igameitemRepository.GetGameItem());
+            var gameitems = _mapper.Map<List<GameItemDto>>(_igameitemRepository.GetGameItem());
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -38,7 +39,7 @@ namespace Pathfinder_CharacterSheet.Controllers
             if (!_igameitemRepository.IGameItemExists(gameitemid))
                 return NotFound();
 
-            var gameitems = _mapper.Map<IGameItemDto>(_igameitemRepository.GetGameItem(gameitemid));
+            var gameitems = _mapper.Map<GameItemDto>(_igameitemRepository.GetGameItem(gameitemid));
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -64,6 +65,93 @@ namespace Pathfinder_CharacterSheet.Controllers
                 return BadRequest(ModelState);
 
             return Ok(gameitem);
+        }
+
+
+        [HttpPost]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        public IActionResult CreateGameItem([FromBody] GameItemDto igameitemCreate)
+        {
+            if (igameitemCreate == null)
+                return BadRequest(ModelState);
+
+            var igameitem = _igameitemRepository.GetGameItem()
+                .Where(g => g.Name.Trim().ToUpper() == igameitemCreate.Name.TrimEnd().ToUpper())
+                .FirstOrDefault();
+
+            if (igameitem != null)
+            {
+                ModelState.AddModelError("", "Game Item already exists");
+                return StatusCode(422, ModelState);
+            }
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var igameitemMap = _mapper.Map<IGameItem>(igameitemCreate);
+
+            if (!_igameitemRepository.CreateGameItem(igameitemMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while saving");
+                return StatusCode(500, ModelState);
+            }
+
+            return Ok("Successfully Created");
+        }
+
+        [HttpPut("{gameitemId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+        public IActionResult UpdateGameItem(int gameitemId, [FromBody] GameItemDto updatedGameItem)
+        {
+            if (updatedGameItem == null)
+                return BadRequest(ModelState);
+
+            if (gameitemId != updatedGameItem.Id)
+                return BadRequest(ModelState);
+
+            if (!_igameitemRepository.IGameItemExists(gameitemId))
+                return NotFound();
+
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            var gameitemMap = _mapper.Map<IGameItem>(updatedGameItem);
+
+            if (!_igameitemRepository.UpdateGameItem(gameitemMap))
+            {
+                ModelState.AddModelError("", "Something went wrong updating Game Item.");
+                return StatusCode(500, ModelState);
+            }
+
+            return NoContent();
+        }
+
+        [HttpDelete("{gameitemId}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+
+        public IActionResult DeleteGameItem(int gameitemId)
+        {
+            if (!_igameitemRepository.IGameItemExists(gameitemId))
+            {
+                return NotFound();
+            }
+
+            var gameitemToDelete = _igameitemRepository.GetGameItem(gameitemId);
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (!_igameitemRepository.DeleteGameItem(gameitemToDelete))
+            {
+                ModelState.AddModelError("", "Something went wrong deleting game item.");
+            }
+
+            return NoContent();
         }
     }
 }
